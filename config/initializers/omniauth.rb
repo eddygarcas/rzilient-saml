@@ -5,7 +5,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     self,
     provider_name: :saml,
     identity_provider_id_regex: UUID_REGEXP,
-    path_prefix: '/api/auth/saml',
+    path_prefix: '/saml',
     callback_suffix: 'callback',
   ) do |identity_provider_id, rack_env|
     request = Rack::Request.new(rack_env)
