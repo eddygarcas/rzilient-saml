@@ -1,0 +1,5 @@
+<%= form_with url: soo_provider_url, method: 'post', class: 'login-form' do |form| %>
+  <%= form.label :email, "Email" %>
+  <%= form.email_field :email %>
+  <%= form.submit "Sign in with SAML SSO" %>
+<% end %>
